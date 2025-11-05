@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #004d42;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      background: url("backround picture.jpg") no-repeat center/cover;
+      padding: 50px 5px;
+
+    }
+
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    header img {
+      height: 50px;
+      vertical-align: middle;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background-color: rgb(255, 255, 255);
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .submit-btn:hover {
+      background-color: #000000;
+      color: red;
+    }
+
+    .cancel-btn {
+      background-color: #4CAF50;
+      color: rgb(255, 255, 255);
+    }
+
+    .cancel-btn:hover {
+      background-color: #000000;
+      color: red;
+    }
+
+      .resume{
+    background:white;
+    color:#052f46;
+    border-radius:10px;
+    padding:10px 14px;
+    border:1px solid rgba(255,255,255,0.04);
+    font-weight:600;
+    letter-spacing:0.6px;
+    cursor:pointer;
+    box-shadow: 0 6px 16px rgba(2,6,23,0.6);
+    position: absolute;
+    align-items: center;
+    margin-left: 1150px;
+  }
+  </style>
+</head>
+
+<body>
+
+    <a href="portfolio.html"><button class="resume" id="resumeBtn">Back</button></a>
+
+
+  <div class="container">
+
+    <form>
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" required placeholder="please Enter your Name!">
+      </div>
+
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" required placeholder="please Enter your Last Name!">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="please Enter your Phone Number">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="please Enter your E.mail !">
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="cancel-btn">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
